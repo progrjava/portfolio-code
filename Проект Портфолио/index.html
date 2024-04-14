@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            WAVE - Главная
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="main-body">
+            <header class="main-header">
+                <nav class="main-nav">
+                    <div class="logo-symbols">
+                        <p class="symb-logo">W</p>
+                        <p class="symb-logo">A</p>
+                        <p class="symb-logo">V</p>
+                        <p class="symb-logo">E</p>
+                    </div>
+                    <a class="theme-changer" href="#">
+                        <svg class="theme-star" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.274 6.27H33.73V14.726C33.73 14.9912 33.8354 15.2456 34.0229 15.4331L38.5863 19.9965L34.0224 24.5674C33.8351 24.7549 33.73 25.009 33.73 25.274V33.73H25.274C25.0088 33.73 24.7544 33.8354 24.5669 34.0229L20.0035 38.5863L15.4326 34.0224C15.2451 33.8351 14.991 33.73 14.726 33.73H6.27V25.274C6.27 25.009 6.16485 24.7549 5.97764 24.5674L1.41368 19.9965L5.97711 15.4331C6.16464 15.2456 6.27 14.9912 6.27 14.726V6.27H14.726C14.991 6.27 15.2451 6.16485 15.4326 5.97764L20.0035 1.41368L24.5669 5.97711C24.7544 6.16464 25.0088 6.27 25.274 6.27Z" stroke="#353536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="theme-moon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.4297 8.33205C9.43343 6.99623 10.714 4.75243 10.9576 1.25988C11.3085 1.44505 11.6703 1.73249 12.0257 2.13271C12.7098 2.90316 13.2824 4.00275 13.5924 5.24254C14.2152 7.73386 13.7312 10.5044 11.4118 12.1913C8.9724 13.9654 6.35128 13.9543 4.33441 13.0821C2.70036 12.3755 1.58122 11.1728 1.17224 9.97971C3.35183 9.8987 5.61518 9.54173 7.4297 8.33205Z" stroke="#353536" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <button type="button" class="button-login" onclick="location.href='../login.html'">
+                        Войти
+                    </button>
+                </nav>
+            </header>
+            <main class="main-page">
+                <section class="about-wave-info">
+                    <h1 class="about-wave">Что такое WAVE?</h1>
+                    <div class="paragr-about-wave">
+                        <p class="text-about-wave1">Господа, творчество подобно океанским волнам, не так ли?<br>
+                            Оно тоже приходит и уходит, поднимаясь и опадая...</p>
+                        <p class="text-about-wave2"><strong>Истинный художник</strong> всегда учится плыть на этих волнах, принимая их<br>
+                            ритм и используя каждый миг вдохновения для создания чего-то<br>
+                            прекрасного!</p>
+                        <p class="text-about-wave3"><strong>Пользуйся WAVE и оседлай эту волну вместе с нами!</strong></p>
+                    </div>
+                </section>
+                <button type="button" class="video-button-ride-wave" onclick="location.href=''">
+                    <video src="IMG/shadergradient.webm" autoplay loop muted></video>
+                    <span>Оседлайте волну вместе с нами!</span>
+                </button>
+            </main>
+            <!--<script>
+                let isDarkMode = false;
+                document.querySelector('.theme-changer').addEventListener('click', function() {
+                    if (isDarkMode) {
+                        document.querySelector('a.theme-changer svg.theme-moon path').setAttribute('stroke', 'black');
+                        document.querySelector('a.theme-changer svg.theme-star path').setAttribute('stroke', 'black');
+                        document.querySelector('a.theme-changer svg').setAttribute('fill', '#F5F5F7');
+                        document.querySelector('button.button-login').style.border = '2px solid #353536';
+                        document.querySelector('button.button-login').style.background = '#F5F5F7';
+                        document.querySelector('button.button-login').style.color = '#353536';
+                        document.querySelector('.main-header').style.background = '#F5F5F7';
+                        document.querySelector('.main-header').style.borderBottom = '2px solid #353536';
+                        document.querySelector('body').style.background = '#ffffff';
+                        document.querySelector('section.about-wave-info').style.background = '#F5F5F7';
+                        document.querySelector('section.about-wave-info').style.border = '2px solid #353536';
+                        document.querySelector('section.about-wave-info').style.color = 'black';
+                        document.querySelector('h1.about-wave').style.color = 'black';
+                        isDarkMode = false;
+                    } else {
+                        document.querySelector('a.theme-changer svg.theme-moon path').setAttribute('stroke', '#ffffff');
+                        document.querySelector('a.theme-changer svg.theme-star path').setAttribute('stroke', '#ffffff');
+                        document.querySelector('a.theme-changer svg').setAttribute('fill', '#353536');
+                        document.querySelector('button.button-login').style.border = '2px solid #ffffff';
+                        document.querySelector('button.button-login').style.background = '#353536';
+                        document.querySelector('button.button-login').style.color = '#ffffff';
+                        document.querySelector('.main-header').style.background = '#353536';
+                        document.querySelector('.main-header').style.borderBottom = '2px solid #ffffff';
+                        document.querySelector('body').style.background = '#353536';
+                        document.querySelector('section.about-wave-info').style.background = '#353536';
+                        document.querySelector('section.about-wave-info').style.border = '2px solid #F5F5F7';
+                        document.querySelector('section.about-wave-info').style.color = 'white';
+                        document.querySelector('h1.about-wave').style.color = 'white';
+                        isDarkMode = true;
+                    }
+                });
+                document.querySelector('.button-login').addEventListener('mouseover', function() {
+                    if (isDarkMode){
+                        this.style.backgroundColor = '#3434D5';
+                        this.style.color = '#f5f5f7';
+                        this.style.border = '2px solid #f5f5f7';
+                    }
+                    else {
+                        this.style.backgroundColor = '#3434D5';
+                        this.style.color = '#f5f5f7';
+                        this.style.border = 'none';
+                    }
+                });
+    
+                document.querySelector('.button-login').addEventListener('mouseout', function() {
+                    if (isDarkMode){
+                        this.style.backgroundColor = '#353536';
+                        this.style.color = '#f5f5f7';
+                        this.style.border = '2px solid #f5f5f7';
+                    }
+                    else {
+                        this.style.backgroundColor = '#f5f5f7';
+                        this.style.color = '#353536';
+                        this.style.border = '2px solid #353536';
+                    }
+                });
+            </script>-->
+        </div>
+        <script src="../script.js"></script>
+    </body>
+</html>

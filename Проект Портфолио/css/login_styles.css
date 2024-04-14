@@ -1,0 +1,158 @@
+body {
+    width: 100vw;
+    margin: 0;
+    background: #F5F5F7;
+}
+
+
+.videobg {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.video-media {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.register-section {
+    position: fixed;
+    width: 1000px;
+    height: 650px;
+    left: 460px;
+    top: 140px;
+    background: #F5F5F7;
+    border: 2px solid #353536;
+    border-radius: 32px;
+}
+
+.logo-symbols-login {
+    background: url('../IMG/Wave_logo.jpg') no-repeat 0px 19px;
+    -webkit-background-clip: text;
+	background-clip: text;
+    position:fixed;
+    width: 300px;
+    height: 80px;
+    left: 830px;
+    top: 340px;
+    font-family: 'GeistBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(0,0,0,0);
+    user-select: none;
+}
+
+.symb-logo-l {
+    padding-right: 25px;
+}
+
+
+.sign-up-butt {
+    position: fixed;
+    width: 458px;
+    height: 88px;
+    left: 490px;
+    top: 496px;
+    background: #3434D5;
+    border-radius: 32px;
+    font-family: 'GeistBold';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #F5F5F7;
+    cursor: pointer;
+}
+
+
+.login-butt {
+    position: fixed;
+    width: 458px;
+    height: 88px;
+    left: 973px;
+    top: 496px;
+    background: #F5F5F7;
+    border: 2px solid #353536;
+    border-radius: 32px;
+    font-family: 'GeistBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #353536;
+    cursor: pointer;
+}
+
+.sign-up-butt:hover, .login-butt:hover {
+    box-shadow: 0 0 40px 5px white;
+}
+
+@font-face {
+    font-family: 'GeistBold';
+    src: url('../Geist-font/Geist-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistBlack';
+    src: url('../Geist-font/Geist-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistLight';
+    src: url('../Geist-font/Geist-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistMedium';
+    src: url('../Geist-font/Geist-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistRegular';
+    src: url('../Geist-font/Geist-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistSemiBold';
+    src: url('../Geist-font/Geist-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistThin';
+    src: url('../Geist-font/Geist-Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistUltraBlack';
+    src: url('../Geist-font/Geist-UltraBlack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeistUltraLight';
+    src: url('../Geist-font/Geist-UltraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
