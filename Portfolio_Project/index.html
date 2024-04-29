@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            WAVE - Главная
+        </title>
+    </head>
+    <body class="container">
+        <header class="header">
+          <div class="logo-container">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a828c7169702a0a822291e3caece0c305cb61df549e53d8b88efacb522014913?apiKey=890340477dfd44e2a7ad00688746066e&" alt="Logo" class="logo" />
+            <div class="search-container">
+              <div class="search-bar">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ae90025d47db1edf42c3cd6e8cde0180dcff2c8b5403dc593d5b327b71e6376?apiKey=890340477dfd44e2a7ad00688746066e" alt="Search icon" class="search-icon" />
+                  <input type="text" class="search-input" placeholder="Поиск...">
+              </div>
+            </div>
+          </div>
+          <div class="user-actions">
+            <div class="user-icon-container">
+              <div class="user-icon-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/12b6fb24cd6aa8880be72fa1c40d2cf3f06195c2a06cce10f1380f5aba13ea35?apiKey=890340477dfd44e2a7ad00688746066e&" alt="User icon" class="user-icon" />
+              </div>
+            </div>
+            <div class="login-button-container">
+              <div class="login-button">Войти</div>
+            </div>
+          </div>
+        </header>
+        <main class="main-content">
+          <section class="intro-section">
+            <div class="intro-container">
+              <h1 class="intro-title">Что такое WAVE?</h1>
+              <p class="intro-text">
+                Господа, творчество подобно океанским волнам. Оно тоже приходит и уходит, поднимаясь и опадая...
+              </p>
+              <p class="intro-highlight">
+                <span style="font-weight: 700">Истинный художник</span> всегда учится плыть на этих волнах, принимая их ритм и используя каждый миг вдохновения для создания чего-то прекрасного!
+              </p>
+              <p class="intro-cta">
+                Пользуйся WAVE и оседлай эту волну вместе с нами!
+              </p>
+            </div>
+            <div class="cta-button">Оседлайте волну вместе с нами!</div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-left">
+              <h2 class="footer-title">Cat-chy code: IT-impossible</h2>
+              <div class="footer-copyright">
+                <div class="copyright-year">2024 UrFU ПП</div>
+                <div class="copyright-text">Все права защищены</div>
+              </div>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e9587d92f9663b9c3d7c7698f68907cc13af6fd6d576992d3e340d0a3b0f739?apiKey=890340477dfd44e2a7ad00688746066e&" alt="Footer logo" class="footer-logo" />
+            <div class="footer-right">
+              <div class="footer-about">О нас</div>
+              <div class="footer-about-text">Подробнее о нашем продукте</div>
+            </div>
+          </div>
+        </footer>
+        <style>
+            .container {
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              flex-direction: column;
+              overflow-x: hidden;
+            }
+
+            .header {
+              border-color: rgba(53, 53, 54, 1);
+              border-bottom: 1px solid;
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              width: 100%;
+              gap: 20px;
+              justify-content: space-between;
+              padding: 14px 80px;
+            }
+
+            @media (max-width: 991px) {
+              .header {
+                max-width: 100%;
+                flex-wrap: wrap;
+                padding: 0 20px;
+              }
+            }
+
+            .logo-container {
+              display: flex;
+              gap: 20px;
+              font-size: 16px;
+              color: var(--30-color, #353536);
+              font-weight: 500;
+              white-space: nowrap;
+              justify-content: space-between;
+              margin: auto 0;
+            }
+
+            @media (max-width: 991px) {
+              .logo-container {
+                max-width: 100%;
+                flex-wrap: wrap;
+                white-space: initial;
+              }
+            }
+
+            .logo {
+              aspect-ratio: 5.26;
+              object-fit: auto;
+              object-position: center;
+              width: 116px;
+              max-width: 100%;
+              margin: auto 0;
+            }
+
+            .search-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 740px;
+            }
+
+            @media (max-width: 991px) {
+              .search-container {
+                max-width: 100%;
+                white-space: initial;
+              }
+            }
+
+            .search-bar {
+                border-radius: 8px;
+                border: 1px solid rgba(53, 53, 54, 1);
+                background-color: var(--60-bit-grey, #ebebf1);
+                display: flex;
+                gap: 20px;
+                padding: 1px 16px;
+            }
+
+            @media (max-width: 991px) {
+              .search-bar {
+                flex-wrap: wrap;
+                white-space: initial;
+              }
+            }
+
+            .search-icon {
+                aspect-ratio: 1;
+                object-fit: auto;
+                object-position: center;
+                width: 30px;
+            }
+
+            .search-placeholder {
+              font-family: 'GeistMedium';
+              font-size: 16px;
+              margin: auto 0;
+            }
+
+            @media (max-width: 991px) {
+              .search-placeholder {
+                max-width: 100%;
+              }
+            }
+            .search-input {
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 8px;
+                background: transparent;
+            }
+            
+            .user-actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            gap: 50px;
+            position: absolute;
+            width: 169px;
+            height: 36px;
+            right: 92px;
+            top: 20px;
+        }
+
+            .user-icon-container {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              margin: auto 0;
+            }
+
+            .user-icon-wrapper {
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              padding: 3px;
+            }
+
+            .user-icon {
+              aspect-ratio: 1;
+              object-fit: auto;
+              object-position: center;
+              width: 24px;
+              fill: var(--30-color, #353536);
+            }
+
+            .login-button-container {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+              color: var(--30-color, #353536);
+              font-weight: 400;
+              white-space: nowrap;
+              text-align: center;
+            }
+
+            @media (max-width: 991px) {
+              .login-button-container {
+                white-space: initial;
+              }
+            }
+
+            .login-button {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              border-radius: 8px;
+              border: 1px solid rgba(53, 53, 54, 1);
+              padding: 8px 24px;
+            }
+
+            @media (max-width: 991px) {
+              .login-button {
+                white-space: initial;
+                padding: 0 20px;
+              }
+            }
+
+            .main-content {
+              align-self: center;
+              display: flex;
+              margin-top: 10px;
+              width: 100%;
+              max-width: 1585px;
+              gap: 20px;
+              justify-content: space-between;
+            }
+
+            @media (max-width: 991px) {
+              .main-content {
+                max-width: 100%;
+                flex-wrap: wrap;
+              }
+            }
+
+            .intro-section {
+              padding-top: 144px;
+              display: flex;
+              flex-direction: column;
+              color: var(--30-color, #353536);
+              text-align: center;
+              margin: auto 0;
+            }
+
+            @media (max-width: 991px) {
+              .intro-section {
+                max-width: 100%;
+              }
+            }
+
+            .intro-container {
+              border-radius: 16px;
+              border: 1px solid rgba(53, 53, 54, 1);
+              display: flex;
+              flex-direction: column;
+              font-size: 24px;
+              font-weight: 600;
+              padding: 40px 80px;
+            }
+
+            @media (max-width: 991px) {
+              .intro-container {
+                max-width: 100%;
+                padding: 0 20px;
+              }
+            }
+
+            .intro-title {
+              font: 40px 'GeistSemiBold';
+            }
+
+            @media (max-width: 991px) {
+              .intro-title {
+                max-width: 100%;
+              }
+            }
+
+            .intro-text {
+              text-align: justify;
+              font: 24px 'GeistMedium';
+              font-weight: 500;
+              margin-top: 30px;
+              color: rgba(53, 53, 54, 1);
+            }
+
+            @media (max-width: 991px) {
+              .intro-text {
+                max-width: 100%;
+              }
+            }
+
+            .intro-highlight {
+              text-align: justify;
+              font: 24px 'GeistMedium';
+              margin-top: 30px;
+            }
+
+            @media (max-width: 991px) {
+              .intro-highlight {
+                max-width: 100%;
+              }
+            }
+
+            .intro-cta {
+              margin-top: 30px;
+              font: 32px 'GeistSemiBold';
+              color: rgba(53, 53, 54, 1);
+            }
+
+            @media (max-width: 991px) {
+              .intro-cta {
+                max-width: 100%;
+              }
+            }
+
+            .cta-button {
+              justify-content: center;
+              border-radius: 16px;
+              border: 1px solid rgba(53, 53, 54, 1);
+              align-self: center;
+              margin-top: 240px;
+              padding: 8px 24px;
+              font: 400 32px 'GeistRegular';
+            }
+
+            @media (max-width: 991px) {
+              .cta-button {
+                max-width: 100%;
+                margin-top: 40px;
+                padding: 0 20px;
+              }
+            }
+
+            .scroll-indicator {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+            }
+
+            @media (max-width: 991px) {
+              .scroll-indicator {
+                display: none;
+              }
+            }
+
+            .scroll-top {
+              aspect-ratio: 1;
+              object-fit: auto;
+              object-position: center;
+              width: 10px;
+            }
+
+            .scroll-bar {
+              border-radius: 32px;
+              background-color: var(--10-color-for-scroll, #3434d5);
+              align-self: stretch;
+              margin-top: 26px;
+              height: 931px;
+            }
+
+            @media (max-width: 991px) {
+              .scroll-bar {
+                display: none;
+              }
+            }
+
+            .scroll-bottom {
+              aspect-ratio: 1;
+              object-fit: auto;
+              object-position: center;
+              width: 10px;
+              margin-top: 19px;
+            }
+
+            .footer {
+              border-color: rgba(53, 53, 54, 1);
+              border-top: 1px solid;
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              margin-top: 136px;
+              width: 100%;
+              align-items: center;
+              color: var(--30-color, #353536);
+              font-weight: 400;
+              justify-content: center;
+              padding: 20px 60px;
+            }
+
+            @media (max-width: 991px) {
+              .footer {
+                max-width: 100%;
+                margin-top: 40px;
+                padding: 0 20px;
+              }
+            }
+
+            .footer-content {
+              display: flex;
+              width: 100%;
+              max-width: 1676px;
+              gap: 20px;
+              justify-content: space-between;
+            }
+
+            @media (max-width: 991px) {
+              .footer-content {
+                max-width: 100%;
+                flex-wrap: wrap;
+              }
+            }
+
+            .footer-left {
+              align-self: start;
+              display: flex;
+              margin-top: 10px;
+              flex-direction: column;
+            }
+
+            .footer-title {
+              text-align: center;
+              font: 32px 'GeistRegular';
+            }
+
+            .footer-copyright {
+              display: flex;
+              margin-top: 18px;
+              gap: 20px;
+              font-size: 16px;
+            }
+
+            .copyright-year {
+              font: 16px 'GeistRegular';
+              flex-grow: 1;
+              flex-basis: auto;
+            }
+
+            .copyright-text {
+              text-align: right;
+              font: 16px 'GeistRegular';
+              flex-grow: 1;
+              flex-basis: auto;
+            }
+
+            .footer-logo {
+              aspect-ratio: 0.97;
+              object-fit: auto;
+              object-position: center;
+              width: 70px;
+              fill: var(--30-color, #353536);
+            }
+
+            .footer-right {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+              padding: 10px;
+            }
+
+            .footer-about {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              align-self: center;
+            }
+
+            .footer-about-text {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              margin-top: 10px;
+            }
+
+            @font-face {
+              font-family: 'GeistBold';
+              src: url('../Geist-font/Geist-Bold.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistBlack';
+              src: url('../Geist-font/Geist-Black.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistLight';
+              src: url('../Geist-font/Geist-Light.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistMedium';
+              src: url('../Geist-font/Geist-Medium.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistRegular';
+              src: url('../Geist-font/Geist-Regular.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistSemiBold';
+              src: url('../Geist-font/Geist-SemiBold.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistThin';
+              src: url('../Geist-font/Geist-Thin.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistUltraBlack';
+              src: url('../Geist-font/Geist-UltraBlack.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: 'GeistUltraLight';
+              src: url('../Geist-font/Geist-UltraLight.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+          }
+          </style>
+    </body>
+</html>
