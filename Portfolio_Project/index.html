@@ -6,6 +6,7 @@
         <title>
             WAVE - Главная
         </title>
+        <link rel="stylesheet" href="normalize.css">
     </head>
     <body class="container">
         <header class="header">
@@ -43,7 +44,14 @@
                 Пользуйся WAVE и оседлай эту волну вместе с нами!
               </p>
             </div>
-            <div class="cta-button">Оседлайте волну вместе с нами!</div>
+            <!--<div class="cta-button">Оседлайте волну вместе с нами!</div>-->
+            <div class="cta-button">
+              <video class="video-background" autoplay loop muted playsinline>
+                <source src="IMG/background-login.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              Оседлайте волну вместе с нами!
+            </div>
           </section>
         </main>
         <footer class="footer">
@@ -172,6 +180,7 @@
                 font-size: 16px;
                 padding: 8px;
                 background: transparent;
+                font: 16px 'GeistMedium';
             }
             
             .user-actions {
@@ -207,6 +216,7 @@
               object-fit: auto;
               object-position: center;
               width: 24px;
+              cursor: pointer;
               fill: var(--30-color, #353536);
             }
 
@@ -233,7 +243,15 @@
               border-radius: 8px;
               border: 1px solid rgba(53, 53, 54, 1);
               padding: 8px 24px;
+              cursor: pointer;
+              transition: background-color 0.3s, color 0.3s;
             }
+
+            .login-button:hover {
+              background-color: rgba(52, 52, 213, 1);
+              color: rgba(245, 245, 247, 1);
+            }
+
 
             @media (max-width: 991px) {
               .login-button {
@@ -339,7 +357,7 @@
               }
             }
 
-            .cta-button {
+            /*.cta-button {
               justify-content: center;
               border-radius: 16px;
               border: 1px solid rgba(53, 53, 54, 1);
@@ -347,6 +365,52 @@
               margin-top: 240px;
               padding: 8px 24px;
               font: 400 32px 'GeistRegular';
+              cursor: pointer;
+            }
+
+            .cta-button:hover {
+              background: url('IMG/background-login.webm');
+            }
+
+            @media (max-width: 991px) {
+              .cta-button {
+                max-width: 100%;
+                margin-top: 40px;
+                padding: 0 20px;
+              }
+            }*/
+
+            .cta-button {
+              position: relative;
+              justify-content: center;
+              border-radius: 16px;
+              border: 1px solid rgba(53, 53, 54, 1);
+              align-self: center;
+              margin-top: 240px;
+              padding: 8px 24px;
+              font: 400 32px 'GeistRegular';
+              cursor: pointer;
+              overflow: hidden; /* Обеспечивает, что видео не выйдет за границы кнопки */
+            }
+
+            .cta-button .video-background {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              z-index: -1; /* Устанавливаем видео под текстом */
+              display: none; /* Изначально скрываем видео */
+            }
+
+            .cta-button:hover .video-background {
+              display: block; /* Показываем видео при наведении */
+            }
+
+            .cta-button:hover {
+              color: white;
+              filter: drop-shadow(0px 0px 4px #3434D5);
             }
 
             @media (max-width: 991px) {
@@ -440,6 +504,7 @@
               display: flex;
               margin-top: 10px;
               flex-direction: column;
+              margin-left: -100px;
             }
 
             .footer-title {
@@ -497,63 +562,63 @@
 
             @font-face {
               font-family: 'GeistBold';
-              src: url('../Geist-font/Geist-Bold.woff2') format('woff2');
+              src: url('Geist-font/Geist-Bold.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistBlack';
-              src: url('../Geist-font/Geist-Black.woff2') format('woff2');
+              src: url('Geist-font/Geist-Black.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistLight';
-              src: url('../Geist-font/Geist-Light.woff2') format('woff2');
+              src: url('Geist-font/Geist-Light.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistMedium';
-              src: url('../Geist-font/Geist-Medium.woff2') format('woff2');
+              src: url('Geist-font/Geist-Medium.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistRegular';
-              src: url('../Geist-font/Geist-Regular.woff2') format('woff2');
+              src: url('Geist-font/Geist-Regular.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistSemiBold';
-              src: url('../Geist-font/Geist-SemiBold.woff2') format('woff2');
+              src: url('Geist-font/Geist-SemiBold.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistThin';
-              src: url('../Geist-font/Geist-Thin.woff2') format('woff2');
+              src: url('Geist-font/Geist-Thin.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistUltraBlack';
-              src: url('../Geist-font/Geist-UltraBlack.woff2') format('woff2');
+              src: url('Geist-font/Geist-UltraBlack.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
 
           @font-face {
               font-family: 'GeistUltraLight';
-              src: url('../Geist-font/Geist-UltraLight.woff2') format('woff2');
+              src: url('Geist-font/Geist-UltraLight.woff2') format('woff2');
               font-weight: normal;
               font-style: normal;
           }
