@@ -11,10 +11,10 @@
     <body class="container">
         <header class="header">
           <div class="logo-container">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a828c7169702a0a822291e3caece0c305cb61df549e53d8b88efacb522014913?apiKey=890340477dfd44e2a7ad00688746066e&" alt="Logo" class="logo" />
+            <img src="IMG/wave-logo.svg" alt="Logo" class="logo" />
             <div class="search-container">
               <div class="search-bar">
-                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ae90025d47db1edf42c3cd6e8cde0180dcff2c8b5403dc593d5b327b71e6376?apiKey=890340477dfd44e2a7ad00688746066e" alt="Search icon" class="search-icon" />
+                  <img src="IMG/search-icon.svg" alt="Search icon" class="search-icon" />
                   <input type="text" class="search-input" placeholder="Поиск...">
               </div>
             </div>
@@ -22,11 +22,13 @@
           <div class="user-actions">
             <div class="user-icon-container">
               <div class="user-icon-wrapper">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/12b6fb24cd6aa8880be72fa1c40d2cf3f06195c2a06cce10f1380f5aba13ea35?apiKey=890340477dfd44e2a7ad00688746066e&" alt="User icon" class="user-icon" />
+                <img src="IMG/moon.svg" alt="User icon" class="user-icon" />
               </div>
             </div>
             <div class="login-button-container">
-              <div class="login-button">Войти</div>
+              <button class="login-button" onclick="location.href='choice.html'">
+                Войти
+              </button>
             </div>
           </div>
         </header>
@@ -44,14 +46,13 @@
                 Пользуйся WAVE и оседлай эту волну вместе с нами!
               </p>
             </div>
-            <!--<div class="cta-button">Оседлайте волну вместе с нами!</div>-->
-            <div class="cta-button">
+            <button class="cta-button" onclick="location.href='choice.html'">
               <video class="video-background" autoplay loop muted playsinline>
                 <source src="IMG/background-login.webm" type="video/webm">
                 Your browser does not support the video tag.
               </video>
               Оседлайте волну вместе с нами!
-            </div>
+            </button>
           </section>
         </main>
         <footer class="footer">
@@ -63,7 +64,7 @@
                 <div class="copyright-text">Все права защищены</div>
               </div>
             </div>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e9587d92f9663b9c3d7c7698f68907cc13af6fd6d576992d3e340d0a3b0f739?apiKey=890340477dfd44e2a7ad00688746066e&" alt="Footer logo" class="footer-logo" />
+            <img src="IMG/CSC-icon.svg" alt="Footer logo" class="footer-logo" />
             <div class="footer-right">
               <div class="footer-about">О нас</div>
               <div class="footer-about-text">Подробнее о нашем продукте</div>
@@ -159,7 +160,7 @@
                 aspect-ratio: 1;
                 object-fit: auto;
                 object-position: center;
-                width: 30px;
+                width: 20px;
             }
 
             .search-placeholder {
@@ -356,29 +357,6 @@
                 max-width: 100%;
               }
             }
-
-            /*.cta-button {
-              justify-content: center;
-              border-radius: 16px;
-              border: 1px solid rgba(53, 53, 54, 1);
-              align-self: center;
-              margin-top: 240px;
-              padding: 8px 24px;
-              font: 400 32px 'GeistRegular';
-              cursor: pointer;
-            }
-
-            .cta-button:hover {
-              background: url('IMG/background-login.webm');
-            }
-
-            @media (max-width: 991px) {
-              .cta-button {
-                max-width: 100%;
-                margin-top: 40px;
-                padding: 0 20px;
-              }
-            }*/
 
             .cta-button {
               position: relative;
