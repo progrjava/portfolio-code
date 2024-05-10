@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            WAVE - О нас
+        </title>
+        <link rel="stylesheet" href="normalize.css">
+    </head>
+    <body class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="IMG/wave-logo.svg" alt="Logo" class="logo" />
+                <div class="search-container">
+                  <div class="search-bar">
+                      <img src="IMG/search-icon.svg" alt="Search icon" class="search-icon" />
+                      <input type="text" class="search-input" placeholder="Поиск...">
+                  </div>
+                </div>
+              </div>
+              <div class="user-actions">
+                <div class="user-icon-container">
+                  <div class="user-icon-wrapper">
+                    <img src="IMG/moon.svg" alt="User icon" class="user-icon" />
+                  </div>
+                </div>
+                <div class="login-button-container">
+                  <button class="login-button" onclick="location.href='choice.html'">
+                    Войти
+                  </button>
+                </div>
+              </div>
+        </header>
+        <main class="main-content">
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                  <h2 class="footer-title">Cat-chy code: IT-impossible</h2>
+                  <div class="footer-copyright">
+                    <div class="copyright-year">2024 UrFU ПП</div>
+                    <div class="copyright-text">Все права защищены</div>
+                  </div>
+                </div>
+                <img src="IMG/CSC-icon.svg" alt="Footer logo" class="footer-logo" />
+                <div class="footer-right">
+                  <div class="footer-about">О нас</div>
+                  <div class="footer-about-text">Подробнее о нашем продукте</div>
+                </div>
+              </div>
+        </footer>
+        <style>
+            .container {
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              flex-direction: column;
+              overflow-x: hidden;
+            }
+
+            .header {
+              border-color: rgba(53, 53, 54, 1);
+              border-bottom: 1px solid;
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              width: 100%;
+              gap: 20px;
+              justify-content: space-between;
+              padding: 14px 80px;
+            }
+
+            @media (max-width: 991px) {
+              .header {
+                max-width: 100%;
+                flex-wrap: wrap;
+                padding: 0 20px;
+              }
+            }
+
+            .logo-container {
+              display: flex;
+              gap: 20px;
+              font-size: 16px;
+              color: var(--30-color, #353536);
+              font-weight: 500;
+              white-space: nowrap;
+              justify-content: space-between;
+              margin: auto 0;
+            }
+
+            @media (max-width: 991px) {
+              .logo-container {
+                max-width: 100%;
+                flex-wrap: wrap;
+                white-space: initial;
+              }
+            }
+
+            .logo {
+              aspect-ratio: 5.26;
+              object-fit: auto;
+              object-position: center;
+              width: 116px;
+              max-width: 100%;
+              margin: auto 0;
+            }
+
+            .search-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 740px;
+            }
+
+            @media (max-width: 991px) {
+              .search-container {
+                max-width: 100%;
+                white-space: initial;
+              }
+            }
+
+            .search-bar {
+                border-radius: 8px;
+                border: 1px solid rgba(53, 53, 54, 1);
+                background-color: var(--60-bit-grey, #ebebf1);
+                display: flex;
+                gap: 20px;
+                padding: 1px 16px;
+            }
+
+            @media (max-width: 991px) {
+              .search-bar {
+                flex-wrap: wrap;
+                white-space: initial;
+              }
+            }
+
+            .search-icon {
+                aspect-ratio: 1;
+                object-fit: auto;
+                object-position: center;
+                width: 20px;
+            }
+
+            .search-placeholder {
+              font-family: 'GeistMedium';
+              font-size: 16px;
+              margin: auto 0;
+            }
+
+            @media (max-width: 991px) {
+              .search-placeholder {
+                max-width: 100%;
+              }
+            }
+            .search-input {
+                flex: 1;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                padding: 8px;
+                background: transparent;
+                font: 16px 'GeistMedium';
+            }
+            
+            .user-actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            gap: 50px;
+            position: absolute;
+            width: 169px;
+            height: 36px;
+            right: 92px;
+            top: 20px;
+        }
+
+            .user-icon-container {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              margin: auto 0;
+            }
+
+            .user-icon-wrapper {
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              padding: 3px;
+            }
+
+            .user-icon {
+              aspect-ratio: 1;
+              object-fit: auto;
+              object-position: center;
+              width: 24px;
+              cursor: pointer;
+              fill: var(--30-color, #353536);
+            }
+
+            .login-button-container {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+              color: var(--30-color, #353536);
+              font-weight: 400;
+              white-space: nowrap;
+              text-align: center;
+            }
+
+            @media (max-width: 991px) {
+              .login-button-container {
+                white-space: initial;
+              }
+            }
+
+            .login-button {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              border-radius: 8px;
+              border: 1px solid rgba(53, 53, 54, 1);
+              padding: 8px 24px;
+              cursor: pointer;
+              transition: background-color 0.3s, color 0.3s;
+            }
+
+            .login-button:hover {
+              background-color: rgba(52, 52, 213, 1);
+              color: rgba(245, 245, 247, 1);
+            }
+
+
+            @media (max-width: 991px) {
+              .login-button {
+                white-space: initial;
+                padding: 0 20px;
+              }
+            }
+
+            .main-content {
+                width: 100%;
+                height: 1446px;
+            }
+
+
+            .footer {
+              border-color: rgba(53, 53, 54, 1);
+              border-top: 1px solid;
+              background-color: var(--60-background, #f5f5f7);
+              display: flex;
+              margin-top: 136px;
+              width: 100%;
+              align-items: center;
+              color: var(--30-color, #353536);
+              font-weight: 400;
+              justify-content: center;
+              padding: 20px 60px;
+            }
+
+            @media (max-width: 991px) {
+              .footer {
+                max-width: 100%;
+                margin-top: 40px;
+                padding: 0 20px;
+              }
+            }
+
+            .footer-content {
+              display: flex;
+              width: 100%;
+              max-width: 1676px;
+              gap: 20px;
+              justify-content: space-between;
+            }
+
+            @media (max-width: 991px) {
+              .footer-content {
+                max-width: 100%;
+                flex-wrap: wrap;
+              }
+            }
+
+            .footer-left {
+              align-self: start;
+              display: flex;
+              margin-top: 10px;
+              flex-direction: column;
+              margin-left: -100px;
+            }
+
+            .footer-title {
+              text-align: center;
+              font: 32px 'GeistRegular';
+            }
+
+            .footer-copyright {
+              display: flex;
+              margin-top: 18px;
+              gap: 20px;
+              font-size: 16px;
+            }
+
+            .copyright-year {
+              font: 16px 'GeistRegular';
+              flex-grow: 1;
+              flex-basis: auto;
+            }
+
+            .copyright-text {
+              text-align: right;
+              font: 16px 'GeistRegular';
+              flex-grow: 1;
+              flex-basis: auto;
+            }
+
+            .footer-logo {
+              aspect-ratio: 0.97;
+              object-fit: auto;
+              object-position: center;
+              width: 70px;
+              fill: var(--30-color, #353536);
+            }
+
+            .footer-right {
+              justify-content: center;
+              display: flex;
+              flex-direction: column;
+              font-size: 16px;
+              padding: 10px;
+            }
+
+            .footer-about {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              align-self: center;
+            }
+
+            .footer-about-text {
+              font: 16px 'GeistRegular';
+              justify-content: center;
+              margin-top: 10px;
+            }
+
+            @font-face {
+              font-family: 'GeistBold';
+              src: url('Geist-font/Geist-Bold.woff2') format('woff2');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistBlack';
+                src: url('Geist-font/Geist-Black.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistLight';
+                src: url('Geist-font/Geist-Light.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistMedium';
+                src: url('Geist-font/Geist-Medium.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistRegular';
+                src: url('Geist-font/Geist-Regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistSemiBold';
+                src: url('Geist-font/Geist-SemiBold.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistThin';
+                src: url('Geist-font/Geist-Thin.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistUltraBlack';
+                src: url('Geist-font/Geist-UltraBlack.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GeistUltraLight';
+                src: url('Geist-font/Geist-UltraLight.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+    </body>
+</html>
